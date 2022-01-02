@@ -38,7 +38,7 @@
     border-radius: 20px;
   }
   
-  a {
+  .nav-link{
     display:block;
     color: blue;
     font-size: 20px;
@@ -48,11 +48,11 @@
     background-color: aliceblue;
     border-radius: 20px;
   }
-  .active {
-    background-color: gray;
+  .nav-link {
+    background-color: rgb(137, 186, 241);
     color: white;
   }
-  a:hover {
+  .nav-link:hover {
     background-color: rgb(214, 141, 208);
     color: white;
   }
@@ -97,31 +97,48 @@
     margin-bottom: 10px;
   }
   .title {
-    margin-top: 30px;
-    margin-left: 48px;
-    margin-right: 48px;
-    display: flex;
-    justify-content: space-between;
+ display: grid;
+ grid-template-rows: repeat(6, auto) ;
   }
   
   .parent {
-    display: flex;
+    margin-left: 70px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25% ;
+    font-size: medium;
+    font-weight: 500;   
+  }
+           
+  .content{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 25% 25% 25% 25% ;
+    justify-content:space-between;
     font-size: medium;
     font-weight: 500;
-    justify-content: space-between;
+    margin-top:10px;
+    margin-left: 65px;
   }
   .child {
-    float: right;
-    width: 40% 40% 20%;
-    padding-left: 48px;
-    margin-left: 60px;
-    justify-content: space-between;
+     justify-content: start;
+     background: none;
+     color: #ffc745;
+     display: inline-block;
+   
   }
-  .line {
-    color: beige;
-    margin: 0px 48px;
+  .git-link{
+    max-width: 80%;
+    background: none;
+    color: #ffc745;
   }
-  
+  .get-link:hover{
+   background-color: none;
+  }
+  .hjs{
+    max-width: 100%;
+    height: 40px;
+  }
   footer {
     position: fixed;
     bottom: 0;
