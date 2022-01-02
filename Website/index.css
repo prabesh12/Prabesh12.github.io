@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  padding: 0.8em 2em;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 110px;
+  margin-bottom: 2px;
+}
+
+.matter {
+  float: left;
+  height: 50px;
+  width: 180px;
+  margin: 0px;
+  padding: 0px;
+  
+}
+section {
+  
+  height: max-content;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+nav {
+  /* border: 2px solid yellow; */
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  margin-left: 30px;
+}
+ul {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.nav-item {
+  width: 8em;
+  display: block;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 8px 10px;
+  text-decoration: none;
+  line-height: 1em;
+  font-style: normal;
+  color: black;
+  font-weight: normal;
+}
+.active {
+  background-color: gray;
+  color: white;
+}
+.nav-item:hover {
+  background-color: rgb(214, 141, 208);
+  color: white;
+  border-radius: 20px;
+}
+.icon {
+  width: 2.2em;
+  height: 2em;
+  cursor: pointer;
+  margin: 0.5em 2em;
+}
+
+main {
+  margin-top: 153px;
+  padding: 0px 20px;
+}
+.container1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.flooring {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3em;
+}
+
+.sub-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5em;
+  padding: 8px;
+  width: 90%;
+  height: 534px;
+  left: 54px;
+  top: 255px;
+}
+.child {
+  width: 1341px;
+  height: 534px;
+}
+
+img {
+  width: max-content;
+  margin: 10px;
+}
+h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.25em;
+  line-height: 1em;
+}
+p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5em;
+}
+
+footer {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.foot-container {
+  height: 40vh;
+}
+.foot-ul {
+  display: block;
+  list-style: none;
+}
+.foot-li {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.foot-a {
+  text-decoration: none;
+  color: black;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+}
+.foot-a:hover {
+  border-bottom: 1px solid black;
+}
