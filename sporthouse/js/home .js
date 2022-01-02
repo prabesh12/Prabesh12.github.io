@@ -1,4 +1,3 @@
-
 const productList = [
 
   {
@@ -39,6 +38,7 @@ const productList = [
 }
 
 ]
+
 function creatProductGrdi(n){
   for (let i =0; i<n; i++){
     
