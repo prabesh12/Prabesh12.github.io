@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Memory Game</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        height: 50vh;
+        width: 500px;
+        margin-top: 100px;
+        margin-left: 500px;
+        align-items: center;
+      }
+      button {
+        margin: 1rem;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="contain" style="display: none">
+      <div class="heading">
+        <h4>Score <span id="score">0</span></h4>
+        <h4>Highest Score <span id="highscore"></span></h4>
+      </div>
+      <div class="sub-container" id="sub-container"></div>
+      <button class="sub-container" onclick="startGame()" style="height: 25px; width: 50px;">Start</button>
+    </div>
+    <div id="btn-container">  
+      <button class="button" id="easy" onclick="easyMode()">Easy</button>
+      <button class="button" id="medium" onclick="mediumMode()">Normal</button>
+      <button class="button" id="hard" onclick="hardMode()">Hard</button>
+    </div>
+
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
