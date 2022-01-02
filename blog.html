@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="blog.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <title>Blog</title>
+  </head>
+  <body>
+      <div class="container" onclick="detailFunction()" id="detail">
+        <div class="card">
+          <div class="card__header">
+            <img src="./images/solid.jpeg" alt="card__image" class="card__image" width="600">
+          </div>
+          <div class="card__body">
+            <span class="tag tag-blue">Technology</span>
+            <h4>SOLID Principle</h4>
+            <p>SOLID principle are the design principles that enables us manage most of the software design problems...</p>
+          </div>
+          
+        </div>
+
+        <script>
+          function detailFunction(){
+           location.replace("Solid.html");
+          }
+        </script>
+    
+  </body>
+</html>
