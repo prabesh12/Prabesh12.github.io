@@ -48,25 +48,29 @@ function resetBox() {
 //generates which box to blink
 function generatePattern() {
 let level;
-  if(gameLevel == "easyMode")
-  {
-    level = 1;
-  }
-else if(gameLevel == "mediumMode"){
-  level = 2;
-}
 
-else if(gameLevel == "hardMode"){
- level = 5;
-}
   
   localStorage.setItem("userClicked", "");
   const patterns = [];
   var count = 0;
   const interval = setInterval(() => {
     for (var i = 0; i < score+1 ; i++) {
-    const value = Math.floor(Math.random() *10);
+      if(gameLevel == "easyMode")
+      {
+        const value = Math.floor(Math.random() *5);
+        var boxId = "B" + value.toString();
+      }
+    else if(gameLevel == "mediumMode"){
+      const value = Math.floor(Math.random() *10);
       var boxId = "B" + value.toString();
+
+    }
+    
+    else if(gameLevel == "hardMode"){
+      const value = Math.floor(Math.random() *20);
+      var boxId = "B" + value.toString();
+
+    }
       if (count == score) {
         clearInterval(interval);
         resetBox();

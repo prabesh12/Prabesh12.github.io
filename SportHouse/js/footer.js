@@ -1,4 +1,4 @@
-const createFooter = () => {
+export const createFooter = () => {
   let footer = document.querySelector(".footer");
   footer.innerHTML = `
     <div class="foot-container">
@@ -30,6 +30,6 @@ const createFooter = () => {
     
     </ul>
   </div>
-    `;
+    `
 };
 createFooter();
